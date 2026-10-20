@@ -1,7 +1,12 @@
-# unityStudy01
-学习一些小工具：Excel读表
-
 # Execl读表脚本工具(Editor)
+
+*外部工具：*  ExcelDataReader(Github)、ExcelDataReader.DataSet（Github）
+
+
+## 操作流程
+### Excel
+- *step1* Unity Editor工具栏位Tool，点击- **获取Excel目录** -拿到存储Excel目录对应的文件夹
+- *step2* 点击Tool工具 - **处理所有的Excel文件** -自动处理Excel文件，具体生成于Generate文件夹中
 
 ## Execl规范
 ### 第一行
@@ -13,6 +18,15 @@
 ### 第四栏及以下
 	Excel表中真正的数据
 
+| A    | B      | C      | D        | E      |
+| ---- | ------ | ------ | -------- | ------ |
+| id   | value1 | MCount | formalua | text   |
+| int  | float  | int    | int[]    | string |
+| 物品ID | 物品数值   | 最大数量   | 合成配方     | 介绍     |
+| 1    | 2.3    | 6      | 1,2,3    | herro  |
+| 2    | 4.56   | 6      | 52,11,22 | 2wcawd |
+| 3    | 1.2    | 11     | 1,112,3  | scac   |
+| 4    | 10.22  | 1313   | 2,2,2    | zxczx  |
 ## Tools生成工具
 *流程*
 一个Excel文件，需要对其转换成数据流，然后转换成unity可读的Execl的形式，其中，按照规范，重点取第一行，第二行，第四行及以下的数据，其中，
