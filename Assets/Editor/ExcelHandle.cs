@@ -1,18 +1,12 @@
-
 using System;
 using System.Data;
 using System.IO;
 using System.Text;
 using ExcelDataReader;
-using NUnit.Framework;
 using UnityEditor;
-using UnityEditor.ShaderGraph;
 using UnityEngine;
 
 namespace Core.Excel {
-    public class PathData
-    {
-    }
 
     public static class ExcelHandle
     {
